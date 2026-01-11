@@ -1,0 +1,103 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#calculator{
+    display: flex;
+    flex-direction: column;
+
+    width: 400px;
+    border: 2px solid #444141;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #f6f6f6;
+
+    gap: 20px;
+}
+
+#display {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    border: 2px solid #444141;;
+    border-radius: 10px;
+}
+
+
+#history {
+    min-height: 120px;
+    background-color: #F3F2F2;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+#calculation {
+    min-height: 60px;
+}
+
+#controls {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+#top-panel {
+    display: flex;
+    gap: 10px;
+}
+
+.extra {
+    padding: 10px;
+    height: 50px;
+    flex: 1;
+}
+
+
+#bottom-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.keypad-row {
+    display: flex;
+    padding: 2px;
+    gap: 10px;
+}
+
+.keypad-button {
+    height: 50px;
+    flex: 1;
+}
+
+.keypad-button, .extra {
+    background-color: #444141;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.keypad-button.operator {
+    background-color: #958D91;
+}
+
+.keypad-button:hover, .extra:hover {
+    background-color: #fff;
+    color: #444141;
+    border: 2px solid #444141;
+}
