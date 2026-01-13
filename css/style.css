@@ -41,7 +41,7 @@ body {
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-end;
-    overflow-y: scroll;
+    overflow: hidden;
     
     padding: 10px;
     height: 120px;
@@ -75,7 +75,7 @@ body {
     gap: 10px;
 }
 
-.extra {
+.delete, .clear {
     padding: 10px;
     height: 50px;
     flex: 1;
@@ -99,7 +99,7 @@ body {
     flex: 1;
 }
 
-.keypad-button, .extra {
+.keypad-button, .delete, .clear {
     background-color: #444141;
     border-radius: 4px;
     color: #fff;
@@ -113,7 +113,7 @@ body {
     background-color: #958D91;
 }
 
-.keypad-button:hover, .extra:hover {
+.keypad-button:hover, .delete:hover, .clear:hover {
     background-color: #fff;
     color: #444141;
     border: 2px solid #444141;
